@@ -3,10 +3,10 @@
 from datetime import datetime
 import json
 import os
-import sas
-import sas_testcase
-from util import winnforum_testcase, generateCpiRsaKeys, \
-     convertRequestToRequestWithCpiSignature, makePpaAndPalRecordsConsistent
+#import sas
+#import sas_testcase
+#from util import winnforum_testcase, generateCpiRsaKeys, \
+#     convertRequestToRequestWithCpiSignature, makePpaAndPalRecordsConsistent
 
 
 class RegistrationTestcase(sas_testcase.SasTestCase):
