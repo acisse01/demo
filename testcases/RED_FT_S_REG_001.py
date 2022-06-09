@@ -15,7 +15,6 @@ import unittest
 class RegistrationTestcase(unittest.TestCase):
   def test_RED_FT_S_REG_001(self):
 
-    print(" ")
     print("---- BEGIN RED_FT_S_REG_001 ----")
     # Load Devices
     cbsd_a = json.load(
