@@ -29,7 +29,11 @@ class RegistrationTestcase(unittest.TestCase):
     cbsd_list = [cbsd_a,cbsd_b,cbsd_c,cbsd_d]
     # Inject FCC ID and User ID
     for cbsd in cbsd_list:
-      print (cbsd) 
+      print (cbsd)
+      self.assertTrue('cbsdSerialNumber' in cbsd)
+      self.assertTrue('longitude' in cbsd['installationParam'])
+      self.assertTrue('latitude' in cbsd['installationParam'])
+      self.assertEqual(cbsd['airInterface']['radioTechnology'], 'E_UTRA')
     print("---- END RED_FT_S_REG_001 SUCCESSFULL ----")
 ##
 ##
