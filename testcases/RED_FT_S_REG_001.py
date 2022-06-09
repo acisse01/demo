@@ -32,6 +32,7 @@ class RegistrationTestcase(unittest.TestCase):
       self.assertTrue('cbsdSerialNumber' in cbsd)
       self.assertTrue('longitude' in cbsd['installationParam'])
       self.assertTrue('latitude' in cbsd['installationParam'])
+      self.assertFalse('cbsdId' in cbsd['installationParam'])
       self.assertEqual(cbsd['airInterface']['radioTechnology'], 'E_UTRA')
     print("---- END RED_FT_S_REG_001 SUCCESSFULL ----")
 ##
